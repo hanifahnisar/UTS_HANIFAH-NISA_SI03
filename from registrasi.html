@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registrasi Kendaraan Anda</title>
+</head>
+<body>
+    <from action="contact.php" method="POST">
+        <fieldset>
+            <legend>Registrasi kendaraan Anda</legend>
+            <p>
+                <label>Status</label>
+                <label><input type="radio" name="status" value="Mahasiswa"/>Mahasiswa</label>
+                <label><input type="radio" name="status" value="Dosen"/>Dosen</label>
+            </p>
+            <p>
+                <label>NIM/NIDM</label>
+                <input type="text" name="nim/nidm"/>
+            </p>
+            <p>
+                <label>Nama Lengkap :</label>
+                <input type="text" name="nama lengkap"/>
+            </p>
+            <p>
+                <td>
+                    <label for="prodi">Prodi :</label>
+                </td>
+                <td>
+                    <select name="Prodi" id="prodi">
+                        <option value="">- Pilih Prodi</option>
+                        <option value="Sistem informasi">Sistem Informasi</option>
+                        <option value="teknik Informatika">Teknik Informatika</option>
+                        <option value="Bisnis Digital">Bisnis Digital</option>
+                    </select>
+                </td>
+            </p>
+            <p>
+                <label>Jenis Kendaraan</label>
+                <label><input type="radio" name="status" value="Motor"/>Motor</label>
+                <label><input type="radio" name="status" value="Mobil"/>mobil</label>
+            </p>
+            <p>
+                <label>No pol</label>
+                <input type="text" name="no pol"/>
+            </p>
+            <p>
+                <label>Merk</label>
+                <input type="text" name="merk"/>
+            </p>
+            <p>
+                <label>Upload STNK</label>
+                <input type="text" name="upload stnk"/> 
+                <button>Browse</button>
+            </p>
+            <div>
+                <div style="margin-left: 10%;">
+                    <input type="submit" name="submit" value="Daftar"/>
+
+                </div>
+            </div>
+            
+
+        </fieldset>
+    </from>
+</body>
+</html>
